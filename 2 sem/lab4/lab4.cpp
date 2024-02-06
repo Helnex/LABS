@@ -15,27 +15,31 @@ int main()
         a[i] = rand() % 10;
         cout << a[i] << ' ';
     }
+    int k;
+    cout << endl
+         << "Введите номер элемента: ";
+    cin >> k;
+    k = k - 1;
 
     cout << endl
          << "По кольцу влево: ";
-    int i = 3;
-    for (int j = i; j < n; ++j)
+    for (int i = k; i < n; ++i)
     {
-        cout << a[j] << ' ';
+        cout << a[i] << ' ';
     }
-    for (int j = 0; j < i; ++j)
+    for (int i = 0; i < k; ++i)
     {
-        cout << a[j] << ' ';
+        cout << a[i] << ' ';
     }
     cout << endl
          << "По кольцу вправо: ";
-    for (int j = i; j > 0; j--)
+    for (int i = k; i > 0; i--)
     {
-        cout << a[j] << ' ';
+        cout << a[i] << ' ';
     }
-    for (int j = n - 2; j > i; j--)
+    for (int i = n - 2; i > k; i--)
     {
-        cout << a[j] << ' ';
+        cout << a[i] << ' ';
     }
     return 0;
 }
