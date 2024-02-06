@@ -27,8 +27,16 @@ int main()
         i++;
     }
 
-    cout << endl
-         << f;
+    if (f)
+    {
+        cout << endl
+             << "Массив упорядочен";
+    }
+    else
+    {
+        cout << endl
+             << "Массив не упорядочен";
+    }
 
     return 0;
 }

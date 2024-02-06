@@ -8,7 +8,7 @@ int main()
     int a[100];
     int n = 5;
     int k = 0;
-
+    cout << "Исходный массив: ";
     for (int i = 0; i < n; i++)
     {
         a[i] = rand() % 10;
@@ -16,9 +16,6 @@ int main()
         if (a[i] % 2 == 0)
             k += 1;
     }
-
-    cout << endl
-         << k;
 
     for (int i = 0; i < n; i++)
     {
@@ -40,7 +37,8 @@ int main()
             i--;
         }
     }
-    cout << endl;
+    cout << endl
+         << "Результат: ";
     for (int i = 0; i < n; i++)
         cout << a[i] << " ";
 }
