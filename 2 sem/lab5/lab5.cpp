@@ -29,8 +29,6 @@ int main()
     }
 
     cout << endl;
-    int m2 = m;
-    int n2 = n;
     int s;
     int maxs = 0;
     for (int j = 0; j < m - 1; j++)
